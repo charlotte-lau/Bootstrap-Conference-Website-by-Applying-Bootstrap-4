@@ -27,19 +27,19 @@
         </div>
       </div>
     </nav><!-- /navbar -->
-    
+
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-info text-white">
       <div class="container text-sm-center pt-5">
         <h1 class="display-2">Full Stack Conf</h1>
-        <p class="lead">A One-day Conference About All Things JavaScript!</p>        
+        <p class="lead">A One-day Conference About All Things JavaScript!</p>
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-          <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
           <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
-        </div>        
+        </div>
       </div>
     </div><!-- /jumbotron -->
-    
+
     <div class="container pt-4">
       <!-- about -->
       <div class="row">
@@ -65,9 +65,9 @@
 					  <a href="#" class="list-group-item list-group-item-action"><strong>ES2015</strong>: Latest version of JavaScript</a>
 					  <a href="#" class="list-group-item list-group-item-action"><strong>Babel</strong>: JavaScript compiler</a>
 					</div>
-        </div>        
+        </div>
       </div><!-- /about -->
-      
+
       <!-- speakers -->
       <h1 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h1>
 			<div class="row">
@@ -78,7 +78,7 @@
               <h4 class="card-title">Vivianne McVue</h4>
               <p class="card-text">Vivianne is a web developer and teacher who is passionate about building scalable, data-driven web apps, especially ones that address old problems with new tech!</p>
             </div>
-          </div>          
+          </div>
 				</div>
 
 				<div class="col-md-6 col-lg-4">
@@ -88,7 +88,7 @@
               <h4 class="card-title">NodeStradamus</h4>
               <p class="card-text">"NodeStra" is a software engineer and philosopher trying to leave the world better than he found it. He codes for non-profits, eCommerce, and large-scale web apps.</p>
             </div>
-          </div>            
+          </div>
 				</div>
 
 				<div class="col-md-6 col-lg-4">
@@ -98,7 +98,7 @@
 			        <h4 class="card-title">Robbie Redux</h4>
 			        <p class="card-text">Robbie is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing barriers to learning code.</p>
 			      </div>
-			    </div>          
+			    </div>
 				</div>
 
 				<div class="col-md-6 col-lg-4">
@@ -108,7 +108,7 @@
 			        <h4 class="card-title">Ecma Scriptnstuff</h4>
 			        <p class="card-text">Ecma found her passion for programming and teaching over 15 years ago. She is excited to introduce you to all of the wonders of JavaScript.</p>
 			      </div>
-			    </div>          
+			    </div>
 				</div>
 
 				<div class="col-md-6 col-lg-4">
@@ -118,7 +118,7 @@
 			        <h4 class="card-title">Jay Query</h4>
 			        <p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development teacher.</p>
 			      </div>
-			    </div>          
+			    </div>
 				</div>
 
 				<div class="col-md-6 col-lg-4">
@@ -128,13 +128,13 @@
 			        <h4 class="card-title">Json Babel</h4>
 			        <p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job.</p>
 			      </div>
-			    </div>          
+			    </div>
 				</div>
 			</div><!-- /speakers -->
-      
+
       <!-- schedule -->
       <h1 class="display-4 text-center my-5 text-muted">Schedule</h1>
-      
+
       <ul class="list-group">
         <li class="list-group-item">
           <div class="d-flex justify-content-between">
@@ -170,26 +170,26 @@
             <span class="badge badge-pill badge-info p-2">1:00pm</span>
           </div>
           <p class="mb-1">Ecma Scriptnstuff</p>
-        </li> 
+        </li>
         <li class="list-group-item">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">Getting Started With Redux</h5>
             <span class="badge badge-pill badge-info p-2">2:00pm</span>
           </div>
           <p class="mb-1">Robbie Redux</p>
-        </li> 
+        </li>
         <li class="list-group-item">
           <div class="d-flex justify-content-between">
             <h5 class="mb-1">What's Babel?</h5>
             <span class="badge badge-pill badge-info p-2">3:00pm</span>
           </div>
           <p class="mb-1">Json Babel</p>
-        </li>        
+        </li>
       </ul><!-- /schedule -->
-   
+
       <!-- callout button -->
-      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Don't Miss Out, Register Now</button>      
-      
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button>
+
    	  <!-- signup form -->
 			<hr>
 			<div class="row py-4 text-muted">
@@ -208,7 +208,7 @@
 			  </div>
 			</div>
 			<hr><!-- /signup form -->
-      
+
       <!-- footer -->
  			<div class="row py-3">
 				<div class="col-md-7">
@@ -239,8 +239,32 @@
 					<small>&copy; 2017 Full Stack Conf &amp; Treehouse</small>
 				</div>
 			</div><!-- /footer -->
-      
+
     </div><!-- /.container -->
+
+    <!--=====================================
+        FORM MODAL
+       =====================================-->
+
+     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Form goes here...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
